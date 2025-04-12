@@ -4,7 +4,7 @@
 
 ## 🚀 Live Demo
 
-🔗 [Visit EaseStay Website](https://divyamoswal.github.io/EaseStay/)  
+🔗 [Visit EaseStay Website]([https://divyamoswal.github.io/EaseStay/](https://ease-stay-eta.vercel.app/index.html))  
 *(Live link will work if deployed via GitHub Pages)*
 
 ## 🛠️ Tech Stack
