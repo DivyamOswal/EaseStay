@@ -1,0 +1,138 @@
+@font-face {
+    font-family: regular;
+    src: url("../../fonts/regular.ttf");
+  }
+  
+  :root {
+    --primary-blue: #0056b3;
+    --highlight-blue: #0361c5;
+    --gray-bg: #e6e6e6;
+    --text-color: #333;
+    --font-size-heading: 4vh;
+    --card-radius: 1.5vh;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: regular, sans-serif;
+    text-decoration: none;
+  }
+  
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .page1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--gray-bg);
+  }
+  
+  .page1 nav {
+    height: 15vh;
+    width: 100%;
+    background-color: var(--primary-blue);
+    color: #fff;
+    padding: 0 2vw;
+  }
+  
+  #nav-top {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3vh;
+  }
+  
+  #nav-top button {
+    font-size: 2vh;
+    height: 5vh;
+    margin-top: 2vh;
+    padding: 0.5vw;
+    color: #fff;
+    background-color: rgb(69, 69, 69);
+    border: none;
+    border-radius: 0.5vw;
+    transition: transform 0.2s ease;
+  }
+  
+  #nav-top button:hover {
+    transform: scale(1.025);
+  }
+  
+  #nav-bottom {
+    display: flex;
+    align-items: center;
+    gap: 3.1vw;
+    z-index: 99;
+  }
+  
+  #nav-bottom a {
+    color: #fff;
+  }
+  
+  #nav-bottom a h3 {
+    padding: 0 1vw;
+    border-radius: 15px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  #nav-bottom a h3:hover {
+    transform: scale(1.1);
+    background-color: #1a4fa0;
+  }
+
+  .contact-section {
+    padding: 5vh 3vw;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 4vh;
+    color: var(--primary-blue);
+    margin-bottom: 2vh;
+  }
+  
+  .contact-section p {
+    font-size: 2.2vh;
+    margin-bottom: 4vh;
+    color: #444;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1.5vh;
+    font-size: 2vh;
+    border: 1px solid #ccc;
+    border-radius: 1vh;
+  }
+  
+  .contact-form button {
+    padding: 1.5vh;
+    font-size: 2.2vh;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: var(--highlight-blue);
+  }
+  
+

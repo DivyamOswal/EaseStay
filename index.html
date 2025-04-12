@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EaseStay</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="page1">
+        <nav>
+          <div id="nav-top">
+            <h1>EaseStay.com</h1>
+            <a href="login/login.html"><button>Login / Signup</button></a>
+          </div>
+          <div id="nav-bottom">
+            <a href="nav-bottom\hotel\hotel.html"><h3>Hotel</h3></a>
+            <a href="/nav-bottom/flights/flights.html"><h3>Flights</h3></a>
+            <a href="nav-bottom/car-rental/car-rental.html"
+              ><h3>Car Rental</h3></a
+            >
+            <a href="nav-bottom\about\about.html"><h3>About</h3></a>
+            <a href="nav-bottom\contact\contact.html"><h3>Contact</h3></a>
+          </div>
+        </nav>
+        <div id="background-image">
+          <img src="images/background.jpg" alt="" />
+          <h1>Stay Your Way <br />Book with Ease !</h1>
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-box"
+              placeholder="Where are you going?"
+            />
+
+            <!-- Button to open the calendar -->
+            <button id="dateButton" onclick="toggleDatePicker()">
+              📅 Select Date
+            </button>
+
+            <!-- Hidden Date Picker -->
+            <input
+              type="date"
+              id="hiddenDatePicker"
+              onchange="updateDateButton()"
+              style="opacity: 0; position: absolute; pointer-events: none"
+            />
+
+            <button onclick="search()">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div id="page1-bottom">
+          <h2>Offers</h2>
+          <h6>Promotions, deals and special offers for you</h6>
+        </div>
+      </div>
+      <div class="page2">
+        <div class="firstSwipper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div id="slide-content">
+                  <h1>Early Bird Offer 🐦</h1>
+                  <h3>Plan Ahead, Pay Less!</h3>
+                  <button><h1>Get 30% OFF</h1></button>
+                </div>
+                <img src="images/offers/early_bird.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <div id="slide-content">
+                  <h1>Last-Minute Deals⏳</h1>
+                  <h3>Spontaneous Trips, Big Savings!</h3>
+                  <button><h1>Upto ₹2000 OFF</h1></button>
+                </div>
+                <img src="images/offers/last_minute_deals.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <div id="slide-content">
+                  <h1>Weekend Getaway Special 🌴</h1>
+                  <h3>Weekend Mode: Activated!</h3>
+                  <button><h1>Save Upto 25%</h1></button>
+                </div>
+                <img src="images/offers/weekend_getaway_special.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <div id="slide-content">
+                  <h1>Stay Longer, Save More 🏨</h1>
+                  <h3>More Nights, More Savings!</h3>
+                  <button><h1>Get 40% OFF</h1></button>
+                </div>
+                <img src="images/offers/stay_longer_save_more.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <div id="slide-content">
+                  <h1>Member-Exclusive 🎁</h1>
+                  <h3>Stay More, Earn More!</h3>
+                  <button><h1>Claim Now</h1></button>
+                </div>
+                <img src="images/offers/member_exclusive.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="explore-section">
+          <div id="explore-top">
+            <h1>Explore India !</h1>
+            <h3>"These must-visit destinations offer endless experiences."</h3>
+          </div>
+          <div class="exploreSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  id="explore-image"
+                  src="images/explore/delhi.jpg"
+                  alt=""
+                /><br />
+                <h1>Delhi</h1>
+                <h3>2,921 properties</h3>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  id="explore-image"
+                  src="images/explore/bangalore.jpg"
+                  alt=""
+                /><br />
+                <h1>Bangalore</h1>
+                <h3>2,048 properties</h3>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  id="explore-image"
+                  src="images/explore/mumbai.jpeg"
+                  alt=""
+                /><br />
+                <h1>Mumbai</h1>
+                <h3>2,500 properties</h3>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  id="explore-image"
+                  src="images/explore/chennai.png"
+                  alt=""
+                /><br />
+                <h1>Chennai</h1>
+                <h3>2,200 properties</h3>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  id="explore-image"
+                  src="images/explore/varanasi.jpg"
+                  alt=""
+                /><br />
+                <h1>Varanasi</h1>
+                <h3>555 properties</h3>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  id="explore-image"
+                  src="images/explore/hyderabad.jpg"
+                  alt=""
+                /><br />
+                <h1>Hyderabad</h1>
+                <h3>814 properties</h3>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  id="explore-image"
+                  src="images/explore/jaipur.jpg"
+                  alt=""
+                /><br />
+                <h1>Jaipur</h1>
+                <h3>1,558 properties</h3>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  id="explore-image"
+                  src="images/explore/pune.jpg"
+                  alt=""
+                /><br />
+                <h1>Pune</h1>
+                <h3>1,891 properties</h3>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  id="explore-image"
+                  src="images/explore/kolkata.jpeg"
+                  alt=""
+                /><br />
+                <h1>Kolkata</h1>
+                <h3>766 properties</h3>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  id="explore-image"
+                  src="images/explore/ahmedabad.jpg"
+                  alt=""
+                /><br />
+                <h1>Ahmedabad</h1>
+                <h3>1,990 properties</h3>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  id="explore-image"
+                  src="images/explore/mysore.jpg"
+                  alt=""
+                /><br />
+                <h1>Mysore</h1>
+                <h3>895 properties</h3>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  id="explore-image"
+                  src="images/explore/udaipur.jpeg"
+                  alt=""
+                /><br />
+                <h1>Udaipur</h1>
+                <h3>795 properties</h3>
+              </div>
+            </div>
+          </div>
+          <div id="explore-top">
+            <h1>Browse By Property Type !</h1>
+          </div>
+        </div>
+      </div>
+      <div class="page3">
+        <div class="browseSwiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/browse/hotel.jpg" alt="" />
+              <div class="browsecontent">
+                <h3>Hotels</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/browse/apartment.jpg" alt="" />
+              <div class="browsecontent">
+                <h3>Apartments</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/browse/resort.jpg" alt="" />
+              <div class="browsecontent">
+                <h3>Resorts</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/browse/villa.jpg" alt="" />
+              <div class="browsecontent">
+                <h3>Villas</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/browse/cabin.png" alt="" />
+              <div class="browsecontent">
+                <h3>Cabins</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/browse/cottage.jpg" alt="" />
+              <div class="browsecontent">
+                <h3>Cottages</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/browse/glamping_sites.jpeg" alt="" />
+              <div class="browsecontent">
+                <h3>Glamping Sites</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/browse/serviced_apartment.jpg" alt="" />
+              <div class="browsecontent">
+                <h3>Serviced Apartments</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/browse/holiday_homes.jpg" alt="" />
+              <div class="browsecontent">
+                <h3>Holiday Homes</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/browse/guest_house.jpg" alt="" />
+              <div class="browsecontent">
+                <h3>Guest Houses</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <br />
+        <div class="quickplanner">
+          <div id="top-content">
+            <h1>Your Quick Travel Helper</h1>
+            <h3>Choose your vibe and discover India's best spots</h3>
+            <div id="top-content-btn">
+              <button>Culture</button>
+              <button>Luxury</button>
+              <button>Family Fun</button>
+              <button>Festivals</button>
+              <button>Road Trips</button>
+            </div>
+          </div>
+          <div id="bottom-content">
+            <div class="bottom-content swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/trip_planner/goa.jpg" alt="Goa" />
+                  <div class="slide-text">
+                    <h3>Goa</h3>
+                    <p>560 km away</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/trip_planner/mysore.jpg" alt="Mysore" />
+                  <div class="slide-text">
+                    <h3>Mysore</h3>
+                    <p>932 km away</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/trip_planner/simla.jpg" alt="Simla" />
+                  <div class="slide-text">
+                    <h3>Simla</h3>
+                    <p>1,741 km away</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/trip_planner/pondicherry.jpg"
+                    alt="Pondicherry"
+                  />
+                  <div class="slide-text">
+                    <h3>Pondicherry</h3>
+                    <p>1,200 km away</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/trip_planner/munnar.jpg" alt="Munnar" />
+                  <div class="slide-text">
+                    <h3>Munnar</h3>
+                    <p>1,261 km away</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/trip_planner/gangtok.jpg" alt="Gangtok" />
+                  <div class="slide-text">
+                    <h3>Gangtok</h3>
+                    <p>2,270 km away</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/trip_planner/kochi.jpg" alt="Kochi" />
+                  <div class="slide-text">
+                    <h3>Kochi</h3>
+                    <p>1,258 km away</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/trip_planner/leh.jpg" alt="Leh" />
+                  <div class="slide-text">
+                    <h3>Leh</h3>
+                    <p>2,600 km away</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/trip_planner/nainital.jpg" alt="Nainital" />
+                  <div class="slide-text">
+                    <h3>Nainital</h3>
+                    <p>1,646 km away</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/trip_planner/ooty.jpg" alt="Ooty" />
+                  <div class="slide-text">
+                    <h3>Ooty</h3>
+                    <p>1,054 km away</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/trip_planner/udaipur.jpg" alt="Udaipur" />
+                  <div class="slide-text">
+                    <h3>Udaipur</h3>
+                    <p>905 km away</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/trip_planner/varkala.jpg" alt="Varkala" />
+                  <div class="slide-text">
+                    <h3>Varkala</h3>
+                    <p>1,546 km away</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="deals">
+          <div id="deals-top">
+            <h1>Weekend Offers You Can’t Miss</h1>
+            <h3>Save on stays from 10 April - 17 April</h3>
+          </div>
+          <div id="deals-bottom">
+            <div class="deals-bottom swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="left-content">
+                    <h3>The Leela, Goa 🏖️</h3>
+                    <button>Flat 40% Off</button>
+                    <p>
+                      Enjoy luxury at The Leela Goa with sun, sand, and savings.
+                    </p>
+                  </div>
+                  <div class="right-image"></div>
+                  <img src="images\deals\leela goa.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="left-content">
+                    <h3>Snow Valley, Manali ❄️</h3>
+                    <button>Up to 35% Off</button>
+                    <p>Your snowy escape in Manali just got more affordable.</p>
+                  </div>
+                  <div class="right-image"></div>
+                  <img src="images\deals\snow_valley_resort.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="left-content">
+                    <h3>La Villa, Pondicherry 🌊</h3>
+                    <button>45% Off Beach Stays</button>
+                    <p>
+                      Boutique French-style luxury just a stroll from the sea.
+                    </p>
+                  </div>
+                  <div class="right-image"></div>
+                  <img src="images\deals\la_villa.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="left-content">
+                    <h3>Taj Lands End, Mumbai</h3>
+                    <button>30% Off Weekend Stays</button>
+                    <p>
+                      A luxurious stay in the heart of Mumbai with big savings.
+                    </p>
+                  </div>
+                  <div class="right-image"></div>
+                  <img src="images\deals\taj_lands_end.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page4">
+        <div id="page4-top">
+          <h1>Find ideas for your next summer getaway !!</h1>
+          <div class="page4-top">
+            <div id="top-left">
+              <img src="images/next_trip/summer.jpg" alt="" />
+              <div class="image-text">
+                <p>
+                  Sun, stay, and savings! Book your perfect summer escape now.
+                </p>
+              </div>
+            </div>
+            <div id="top-right">
+              <div class="right-card">
+                <img src="images\next_trip\india_summer.jpg" alt="" />
+                <div class="card-text">
+                  <h2>
+                    7 of the most visited places in India, popular among both
+                    domestic and international tourists
+                  </h2>
+                  <p>
+                    Discover unmissable ryokans to relax and unwind in style.
+                  </p>
+                </div>
+              </div>
+
+              <div class="right-card">
+                <img
+                  src="images\next_trip\most_vist_places.jpg"
+                  alt="Christmas in India"
+                />
+                <div class="card-text">
+                  <h2>7 best places in India to celebrate Christmas</h2>
+                  <p>
+                    Discover the shimmering lights and festive sights of India's
+                    holiday season.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="page4-bottom">
+          <h2>See more, spend less</h2>
+          <div id="page4-bottom-content">
+            <div id="bottom-content-left">
+              <h3>Sign in , Save money</h3>
+              <h4>
+                Enjoy 10%+ off at select stays – just spot the blue Genius tag!
+              </h4>
+              <div id="bottom-left-btn">
+                <button>Sign in</button>
+                <button>Register</button>
+              </div>
+            </div>
+            <div id="bottom-content-right">
+              <img src="images/bottom_signin/genius.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page5">
+        <div class="hero-container">
+          <div class="yellow-circle"></div>
+          <div class="hero-left">
+            <div class="circle-bg">
+              <h2>
+                Find <span id="changing-word">apartments</span><br />for your
+                next trip
+              </h2>
+              <button>Discover homes</button>
+            </div>
+          </div>
+          <div class="hero-right">
+            <img src="images\illustration.png" alt="illustration" />
+          </div>
+        </div>
+        <div class="page5-bottom">
+          <h2># Top choice for visitors from India</h2>
+          <div id="page5-bottom-btn">
+            <button>Top Picks</button>
+            <button>Trending</button>
+            <button>Explores</button>
+            <button>Book Now</button>
+            <button>Hot Deals</button>
+          </div>
+          <div id="page5-bottom-list">
+            <ul>
+              <li>Delhi Hotels</li>
+              <li>Mumbai Hotels</li>
+              <li>Jaipur Hotels</li>
+              <li>Agra Hotels</li>
+              <li>Goa Hotels</li>
+              <li>Bengaluru Hotels</li>
+              <li>Chennai Hotels</li>
+            </ul>
+            <ul>
+              <li>Udaipur Hotels</li>
+              <li>Varanasi Hotels</li>
+              <li>Kochi Hotels</li>
+              <li>Shimla Hotels</li>
+              <li>Manali Hotels</li>
+              <li>Rishikesh Hotels</li>
+              <li>Amritsar Hotels</li>
+            </ul>
+            <ul>
+              <li>Darjeeling Hotels</li>
+              <li>Mysore Hotels</li>
+              <li>Jaisalmer Hotels</li>
+              <li>Aurangabad Hotels</li>
+              <li>Nashik Hotels</li>
+              <li>Gwalior Hotels</li>
+              <li>Jodhpur Hotels</li>
+            </ul>
+            <ul>
+              <li>Pune Hotels</li>
+              <li>Lucknow Hotels</li>
+              <li>Chandigarh Hotels</li>
+              <li>Bhopal Hotels</li>
+              <li>Indore Hotels</li>
+              <li>Thiruvananthapuram Hotels</li>
+              <li>Madurai Hotels</li>
+            </ul>
+            <ul>
+              <li>Dehradun Hotels</li>
+              <li>Mussoorie Hotels</li>
+              <li>Haridwar Hotels</li>
+              <li>Mount Abu Hotels</li>
+              <li>Gangtok Hotels</li>
+              <li>Leh Hotels</li>
+              <li>Aizawl Hotels</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page6">
+        <footer>
+          <ul>
+            <h3>Company</h3>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Press</li>
+            <li>Investor Relations</li>
+            <li>Corporate Travel</li>
+            <li>Sustainability Initiatives</li>
+            <li>Blog</li>
+          </ul>
+          <ul>
+            <h3>Explore</h3>
+            <li>Destinations</li>
+            <li>Cities</li>
+            <li>Countries</li>
+            <li>Travel Guides</li>
+            <li>Weekend Getaways</li>
+            <li>Cultural Trips</li>
+            <li>Beach Vacations</li>
+            <li>Mountain Retreats</li>
+          </ul>
+          <ul>
+            <h3>Legal</h3>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+            <li>Security</li>
+            <li>Legal Information</li>
+            <li>Dispute Resolution</li>
+          </ul>
+          <ul>
+            <h3>Partners</h3>
+            <li>Affiliate Program</li>
+            <li>Hotel Partners</li>
+            <li>Property Manager Login</li>
+            <li>Travel Agents</li>
+            <li>Business Travel Solutions</li>
+            <li>List Your Property</li>
+          </ul>
+          <ul>
+            <h3>Follow Us</h3>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>LinkedIn</li>
+            <li>YouTube</li>
+            <li>Pinterest</li>
+          </ul>
+        </footer>
+        <hr />
+        <div id="page6-bottom">
+          <h3>
+            EaseStay.com is part of EaseStay Holdings Inc., the world leader in
+            online travel and related services.
+          </h3>
+          <h3>Copyright © 1996–2025 EaseStay.com™. All rights reserved.</h3>
+          <div class="logo-strip">
+            <img src="images\logo\easestay.png" alt="EaseStay.com" />
+            <img src="images/logo/priceline.png" alt="Priceline" />
+            <img src="images/logo/kayak.png" alt="KAYAK" />
+            <img src="images/logo/agoda.png" alt="Agoda" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="car-rental.css">
+  </head>
+  <body>
+    <main>
+      <div class="page1">
+        <nav>
+          <div id="nav-top">
+            <h1>EaseStay.com</h1>
+            <a href="../../login/login.html">
+              <button>Login / Signup</button>
+            </a>
+          </div>
+          <div id="nav-bottom">
+            <a href="../../index.html"><h3>Home</h3></a>
+            <a href="../hotel/hotel.html"><h3>Hotel</h3></a>
+            <a href="../flights/flights.html"><h3>Flights</h3></a>
+            <a href="../about/about.html"><h3>About</h3></a>
+            <a href="../contact/contact.html"><h3>Contact</h3></a>
+          </div>
+        </nav>
+        <div class="page1-top">
+          <section class="greeting">
+            <h2>Welcome to EaseStay.com</h2>
+            <p>
+              Your perfect journey starts here. Discover top flight deals, enjoy
+              smooth booking, and fly with comfort and confidence.
+            </p>
+            <p>
+              Whether it's a quick business trip, a family vacation, or a
+              spontaneous getaway — we’ve got the right flight for every travel
+              plan.
+            </p>
+          </section>
+
+          <div id="page1-top-btn">
+            <button>Search Cars</button>
+            <button>Vehicle Type</button>
+            <button>Economy</button>
+            <button>Deals</button>
+            <button>Seden</button>
+            <button>SUV</button>
+            <button>Quick Book</button>
+            <button>Luxury</button>
+          </div>
+        </div>
+
+        <section id="hero">
+          <img
+            src="images/car-rental.jpg"
+            alt="Rental Car Images"
+            style="
+              width: 27vw;
+              height: 27vh;
+              border-radius: 10px;
+              margin-bottom: 20px;
+              object-fit: cover;
+            "
+          />
+          <h1>Find the Best Car Rentals at the Best Prices</h1>
+          <p>
+            Compare, book, and drive with ease — wherever the road takes you.
+          </p>
+
+          <form id="flight-search-form">
+            <input type="text" placeholder="Pick-up Location" />
+            <input type="text" placeholder="Drop-off Location" />
+            <input type="date" placeholder="Pick-up Date" />
+            <input type="date" placeholder="Drop-off Date" />
+            <select>
+              <option>1 Driver</option>
+              <option>2 Drivers</option>
+              <option>Family/Group</option>
+          
+            </select>
+            <button type="submit">Search Cars</button>
+          </form>
+        </section>
+
+        <section id="top-deals">
+          <h2>Top Deals This Week</h2>
+          <div class="deals-grid">
+            <div class="deal-card">
+              <img
+                src="images/cars/i20.jpg"
+                alt="Hyundai i20 image"
+                style="width: 100%; border-radius: 8px"
+              />
+              <h4>Hyundai i20 (Hatchback)</h4>
+              <p>₹1,299/day</p>
+              <button>Book Now</button>
+            </div>
+            <div class="deal-card">
+              <img
+                src="images/cars/amaze.jpg"
+                alt="Honda Amaze image"
+                style="width: 100%; border-radius: 8px"
+              />
+              <h4>Honda Amaze (Sedan)</h4>
+              <p>₹1,499/day</p>
+              <button>Book Now</button>
+            </div>
+            <div class="deal-card">
+              <img
+                src="images/cars/crysta.jpg"
+                alt="Toyota Innova Crysta image"
+                style="width: 100%; border-radius: 8px"
+              />
+              <h4>Toyota Innova Crysta (SUV)</h4>
+              <p>₹2,499/day</p>
+              <button>Book Now</button>
+            </div>
+            <div class="deal-card">
+              <img
+                src="images/cars/swift.jpg"
+                alt="Maruti Swift image"
+              />
+              <h4>Maruti Swift (Hatchback)</h4>
+              <p>₹1,099/day</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/seltos.jpg"
+                alt="Kia Seltos image"
+              />
+              <h4>
+                Kia Seltos (SUV)
+              </h4>
+              <p>₹2,099/day</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/thar.jpg"
+                alt="Mahindra Thar image"
+              />
+              <h4>Mahindra Thar (Off-Road)</h4>
+              <p>₹2,899/day</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/e-class.jpg"
+                alt="Mercedes-Benz E-Class image"
+              />
+              <h4>Mercedes-Benz E-Class (Luxury)</h4>
+              <p>₹5,499/day</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/tiago.jpg"
+                alt="Tata Tiago image"
+              />
+              <h4>Tata Tiago (Compact)</h4>
+              <p>₹1,099/day</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/fortuner.jpg"
+                alt="Toyota Fortuner image"
+              />
+              <h4>Toyota Fortuner (SUV)</h4>
+              <p>₹3,299/day</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/superb.jpeg"
+                alt="Skoda Superb image"
+              />
+              <h4>Skoda Superb (Sedan)</h4>
+              <p>₹2,799/day</p>
+              <button>Book Now</button>
+            </div>
+            <div class="deal-card">
+              <img
+                src="images/cars/verna.jpg"
+                alt="Hyundai Verna immage"
+              />
+              <h4>Hyundai Verna (Sedan)</h4>
+              <p>₹1,799/day</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/x1.jpg"
+                alt="BMW X1 image"
+              />
+              <h4>BMW X1 (Luxury XUv)</h4>
+              <p>₹4,999/day</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/triber.jpg"
+                alt="Renault Triber image"
+              />
+              <h4>Renault Triber</h4>
+              <p>From ₹13,299</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/hector.JPG"
+                alt="MG Hector image"
+              />
+              <h4>MG Hectoer (SUV)</h4>
+              <p>₹2,399/day</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/compass.jpg"
+                alt="Jeep Compass (SUV)"
+              />
+              <h4>Jeep Compass</h4>
+              <p>₹2,699/day</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/audi-a4.jpg"
+                alt="Audi A4 image"
+              />
+              <h4>Audi A4 (Luxury)</h4>
+              <p>₹5,999/day</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/magnite.jpg"
+                alt="Nissan Magnite image"
+              />
+              <h4>Nissan Magnite (Compact SUV)</h4>
+              <p>₹1,599/day</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/virtus.jpg"
+                alt="Volkwagen Virtus image"
+              />
+              <h4>Volkwagen Virtus (Sedan)</h4>
+              <p>₹1,899/day</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/nexon-ev.jpg"
+                alt="Tata Nexon EV image"
+              />
+              <h4>Tata Nexon EV (Electric SUV)</h4>
+              <p>From ₹2,899</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/cars/ciaz.jpg"
+                alt="Maruti Ciaz image"
+              />
+              <h4>Maruti Ciaz (Sedan)</h4>
+              <p>₹1,499/day</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="why-easestay">
+          <h2>Why Book Rental Cars with EaseStay?</h2>
+          <img src="images/car rental.jpg" alt="Car rental" />
+          <ul>
+            <li>✔ Lowest roadfare guaranteed</li>
+            <li>✔ 24/7 customer support</li>
+            <li>✔ Easy cancellations & refunds</li>
+            <li>✔ Secure and fast payment options</li>
+          </ul>
+        </section>
+
+        <section id="testimonials">
+          <h2>What Our Travelers Say</h2>
+          <blockquote>
+            <img
+              src="images/happy-traveller.jpg"
+              alt="Happy traveler"
+              style="
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin-right: 10px;
+              "
+            />
+            "Renting a car through EaseStay was so simple! Great prices and smooth pickup experience!"<br /> — Ramesh, Mumbai
+          </blockquote>
+        </section>
+
+        <section id="newsletter">
+          <h2>Stay Updated on Car Rentals Deals</h2>
+          <input type="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <h3>Company</h3>
+        <li>About Us</li>
+        <li>Careers</li>
+        <li>Press</li>
+        <li>Investor Relations</li>
+        <li>Corporate Travel</li>
+        <li>Sustainability Initiatives</li>
+        <li>Blog</li>
+      </ul>
+      <ul>
+        <h3>Explore</h3>
+        <li>Destinations</li>
+        <li>Cities</li>
+        <li>Countries</li>
+        <li>Travel Guides</li>
+        <li>Weekend Getaways</li>
+        <li>Cultural Trips</li>
+        <li>Beach Vacations</li>
+        <li>Mountain Retreats</li>
+      </ul>
+      <ul>
+        <h3>Legal</h3>
+        <li>Terms & Conditions</li>
+        <li>Privacy Policy</li>
+        <li>Cookie Policy</li>
+        <li>Security</li>
+        <li>Legal Information</li>
+        <li>Dispute Resolution</li>
+      </ul>
+      <ul>
+        <h3>Partners</h3>
+        <li>Affiliate Program</li>
+        <li>Hotel Partners</li>
+        <li>Property Manager Login</li>
+        <li>Travel Agents</li>
+        <li>Business Travel Solutions</li>
+        <li>List Your Property</li>
+      </ul>
+      <ul>
+        <h3>Follow Us</h3>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Twitter</li>
+        <li>LinkedIn</li>
+        <li>YouTube</li>
+        <li>Pinterest</li>
+      </ul>
+    </footer>
+    <div class="bottom-rights">
+      <h3>
+        EaseStay.com is part of EaseStay Holdings Inc., the world leader in
+        online travel and related services.
+      </h3>
+      <h3>Copyright © 1996–2025 EaseStay.com™. All rights reserved.</h3>
+      <div class="logo-strip">
+        <img src="images\logo\easestay.png" alt="EaseStay.com" />
+        <img src="images/logo/priceline.png" alt="Priceline" />
+        <img src="images/logo/kayak.png" alt="KAYAK" />
+        <img src="images/logo/agoda.png" alt="Agoda" />
+      </div>
+      <script src="car-rental.js"></script>
+    </div>
+  </body>
+</html>

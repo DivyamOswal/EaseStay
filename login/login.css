@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0056b3, #00aaff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background: white;
+    padding: 5vh 4vw;
+    border-radius: 2vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .login-container h1 {
+    font-size: 4vh;
+    margin-bottom: 3vh;
+    color: #0056b3;
+  }
+  
+  .login-buttons button {
+    width: 100%;
+    margin-bottom: 1.5vh;
+    padding: 1.8vh;
+    font-size: 2vh;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s ease;
+  }
+  
+  .google-btn {
+    background-color: #db4437;
+  }
+  
+  .google-btn:hover {
+    background-color: #c23321;
+  }
+  
+  .facebook-btn {
+    background-color: #3b5998;
+  }
+  
+  .facebook-btn:hover {
+    background-color: #2d4373;
+  }
+  
+  .apple-btn {
+    background-color: #000000;
+  }
+  
+  .apple-btn:hover {
+    background-color: #333333;
+  }
+  
+  .or-divider {
+    margin: 2vh 0;
+    font-size: 2vh;
+    color: #666;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 1.5vh;
+    margin-bottom: 2vh;
+    border: 1px solid #ccc;
+    border-radius: 1vh;
+    font-size: 2vh;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 1.5vh;
+    font-size: 2vh;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background-color: #004494;
+  }
+  
+  .signup-link {
+    margin-top: 2vh;
+    font-size: 1.8vh;
+  }
+  
+  .signup-link a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  

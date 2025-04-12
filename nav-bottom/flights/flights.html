@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flights</title>
+    <link rel="stylesheet" href="flights.css" />
+  </head>
+  <body>
+    <main>
+      <div class="page1">
+        <nav>
+          <div id="nav-top">
+            <h1>EaseStay.com</h1>
+            <a href="../../login/login.html">
+              <button>Login / Signup</button>
+            </a>
+          </div>
+          <div id="nav-bottom">
+            <a href="../../index.html"><h3>Home</h3></a>
+            <a href="../hotel/hotel.html"><h3>Hotel</h3></a>
+            <a href="../car-rental/car-rental.html"><h3>Car Rental</h3></a>
+            <a href="../about/about.html"><h3>About</h3></a>
+            <a href="../contact/contact.html"><h3>Contact</h3></a>
+          </div>
+        </nav>
+        <div class="page1-top">
+          <section class="greeting">
+            <h2>Welcome to EaseStay.com</h2>
+            <p>
+              Your perfect journey starts here. Discover top car rental deals, enjoy
+              hassle-free booking, and drive with comfort and confidence.
+            </p>
+            <p>
+              Whether it's a quick business trip, a family vacation, or a
+              spontaneous road trip — we’ve got the right car for every travel
+              plan.
+            </p>
+          </section>
+
+          <div id="page1-top-btn">
+            <button>Search Flights</button>
+            <button>Book Tickets</button>
+            <button>Flight Deals</button>
+            <button>Explore Destinations</button>
+            <button>Check Schedule</button>
+            <button>Quick Book</button>
+            <button>Reserve Seats</button>
+            <button>Plan Your Trip</button>
+          </div>
+        </div>
+
+        <section id="hero">
+          <img
+            src="images/flight-taking-off.jpg"
+            alt="Flight taking off"
+            style="
+              width: 27vw;
+              height: 27vh;
+              border-radius: 10px;
+              margin-bottom: 20px;
+              object-fit: cover;
+            "
+          />
+          <h1>Find the Best Flights at the Best Prices</h1>
+          <p>
+            Compare, book, and fly with ease — wherever your journey takes you.
+          </p>
+
+          <form id="flight-search-form">
+            <input type="text" placeholder="From (City or Airport)" />
+            <input type="text" placeholder="To (City or Airport)" />
+            <input type="date" placeholder="Departure Date" />
+            <input type="date" placeholder="Return Date (optional)" />
+            <select>
+              <option>1 Adult</option>
+              <option>2 Adults</option>
+              <option>Family (3+)</option>
+            </select>
+            <button type="submit">Search Flights</button>
+          </form>
+        </section>
+
+        <section id="top-deals">
+          <h2>Top Deals This Week</h2>
+          <div class="deals-grid">
+            <div class="deal-card">
+              <img
+                src="images/deals-card/goa.jpg"
+                alt="Delhi to Goa"
+                style="width: 100%; border-radius: 8px"
+              />
+              <h4>Indigo: Delhi → Goa</h4>
+              <p>From ₹2,999</p>
+              <button>Book Now</button>
+            </div>
+            <div class="deal-card">
+              <img
+                src="images/deals-card/dubai.jpg"
+                alt="Mumbai to Dubai"
+                style="width: 100%; border-radius: 8px"
+              />
+              <h4>Emirates: Mumbai → Dubai</h4>
+              <p>From ₹8,499</p>
+              <button>Book Now</button>
+            </div>
+            <div class="deal-card">
+              <img
+                src="images/deals-card/bangkok.jpg"
+                alt="Bangalore to Bangkok"
+                style="width: 100%; border-radius: 8px"
+              />
+              <h4>Spicejet: Bangalore → Bangkok</h4>
+              <p>From ₹12,000</p>
+              <button>Book Now</button>
+            </div>
+            <div class="deal-card">
+              <img
+                src="images/deals-card/mumbai.jpeg"
+                alt="AirAsia Delhi to Mumbai"
+              />
+              <h4>AirAsia: Delhi → Mumbai</h4>
+              <p>From ₹3,499</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/bangalore.jpg"
+                alt="IndiGo Chennai to Bangalore"
+              />
+              <h4>IndiGo: Chennai → Bangalore</h4>
+              <p>From ₹2,799</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/goa2.jpg"
+                alt="SpiceJet Hyderabad to Goa"
+              />
+              <h4>SpiceJet: Hyderabad → Goa</h4>
+              <p>From ₹3,299</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/delhi.jpg"
+                alt="Vistara Kolkata to Delhi"
+              />
+              <h4>Vistara: Kolkata → Delhi</h4>
+              <p>From ₹4,099</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/jaipur.jpg"
+                alt="GoAir Mumbai to Jaipur"
+              />
+              <h4>GoAir: Mumbai → Jaipur</h4>
+              <p>From ₹3,599</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/kochi.jpg"
+                alt="Air India Bangalore to Kochi"
+              />
+              <h4>Air India: Bangalore → Kochi</h4>
+              <p>From ₹2,999</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/srinagar.jpg"
+                alt="IndiGo Delhi to Srinagar"
+              />
+              <h4>IndiGo: Delhi → Srinagar</h4>
+              <p>From ₹4,499</p>
+              <button>Book Now</button>
+            </div>
+            <div class="deal-card">
+              <img
+                src="images/deals-card/dubai2.jpg"
+                alt="Air India Delhi to Dubai"
+              />
+              <h4>Air India: Delhi → Dubai</h4>
+              <p>From ₹12,999</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/singapore.jpg"
+                alt="IndiGo Mumbai to Singapore"
+              />
+              <h4>IndiGo: Mumbai → Singapore</h4>
+              <p>From ₹14,499</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/bangkok2.jpg"
+                alt="Vistara Delhi to Bangkok"
+              />
+              <h4>Vistara: Delhi → Bangkok</h4>
+              <p>From ₹13,299</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/kolkata.jpg"
+                alt="SpiceJet Hyderabad to Kolkata"
+              />
+              <h4>SpiceJet: Hyderabad → Kolkata</h4>
+              <p>From ₹4,299</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/ahmedabad.jpg"
+                alt="GoAir Pune to Ahmedabad"
+              />
+              <h4>GoAir: Pune → Ahmedabad</h4>
+              <p>From ₹3,199</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/trivandrum.jpg"
+                alt="AirAsia Kochi to Trivandrum"
+              />
+              <h4>AirAsia: Kochi → Trivandrum</h4>
+              <p>From ₹1,999</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/delhi2.jpg"
+                alt="Vistara Jaipur to Delhi"
+              />
+              <h4>Vistara: Jaipur → Delhi</h4>
+              <p>From ₹2,899</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/pune.jpg"
+                alt="IndiGo Mumbai to Pune"
+              />
+              <h4>IndiGo: Mumbai → Pune</h4>
+              <p>From ₹2,099</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/kochi2.jpg"
+                alt="Air India Chennai to Kochi"
+              />
+              <h4>Air India: Chennai → Kochi</h4>
+              <p>From ₹2,899</p>
+              <button>Book Now</button>
+            </div>
+
+            <div class="deal-card">
+              <img
+                src="images/deals-card/mumbai2.jpg"
+                alt="SpiceJet Goa to Mumbai"
+              />
+              <h4>SpiceJet: Goa → Mumbai</h4>
+              <p>From ₹3,499</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="why-easestay">
+          <h2>Why Book Flights with EaseStay?</h2>
+          <img
+            src="images/whyeasestay.jpg"
+            alt="Passengers in airport"
+          />
+          <ul>
+            <li>✔ Lowest airfare guaranteed</li>
+            <li>✔ 24/7 customer support</li>
+            <li>✔ Easy cancellations & refunds</li>
+            <li>✔ Secure and fast payment options</li>
+          </ul>
+        </section>
+
+        <section id="testimonials">
+          <h2>What Our Travelers Say</h2>
+          <blockquote>
+            <img
+              src="images/happy-traveller.jpg"
+              alt="Happy traveler"
+              style="
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin-right: 10px;
+              "
+            />
+            "Booking flights through EaseStay was so simple! Great prices and
+            amazing support!"<br />
+            — Priya, Delhi
+          </blockquote>
+        </section>
+
+        <section id="newsletter">
+          <h2>Stay Updated on Flight Deals</h2>
+          <input type="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <h3>Company</h3>
+        <li>About Us</li>
+        <li>Careers</li>
+        <li>Press</li>
+        <li>Investor Relations</li>
+        <li>Corporate Travel</li>
+        <li>Sustainability Initiatives</li>
+        <li>Blog</li>
+      </ul>
+      <ul>
+        <h3>Explore</h3>
+        <li>Destinations</li>
+        <li>Cities</li>
+        <li>Countries</li>
+        <li>Travel Guides</li>
+        <li>Weekend Getaways</li>
+        <li>Cultural Trips</li>
+        <li>Beach Vacations</li>
+        <li>Mountain Retreats</li>
+      </ul>
+      <ul>
+        <h3>Legal</h3>
+        <li>Terms & Conditions</li>
+        <li>Privacy Policy</li>
+        <li>Cookie Policy</li>
+        <li>Security</li>
+        <li>Legal Information</li>
+        <li>Dispute Resolution</li>
+      </ul>
+      <ul>
+        <h3>Partners</h3>
+        <li>Affiliate Program</li>
+        <li>Hotel Partners</li>
+        <li>Property Manager Login</li>
+        <li>Travel Agents</li>
+        <li>Business Travel Solutions</li>
+        <li>List Your Property</li>
+      </ul>
+      <ul>
+        <h3>Follow Us</h3>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Twitter</li>
+        <li>LinkedIn</li>
+        <li>YouTube</li>
+        <li>Pinterest</li>
+      </ul>
+    </footer>
+    <div class="bottom-rights">
+      <h3>EaseStay.com is part of EaseStay Holdings Inc., the world leader in online travel and related services.</h3>
+      <h3>Copyright © 1996–2025 EaseStay.com™. All rights reserved.</h3>
+      <div class="logo-strip">
+        <img src="images\logo\easestay.png" alt="EaseStay.com" />
+        <img src="images/logo/priceline.png"alt="Priceline" />
+        <img src="images/logo/kayak.png" alt="KAYAK" />
+        <img src="images/logo/agoda.png" alt="Agoda" />
+    </div>
+    <script src="flights.js"></script>
+  </body>
+</html>
